@@ -45,3 +45,11 @@ export const getProducts = () => {
         }, 2000) 
     }) 
 } 
+
+export const getItem = (productId) => { 
+    return new Promise (resolve => { 
+        setTimeout (()=> { 
+            resolve (products.find(prod => prod.id === productId)) 
+        }, 2000) 
+    }) 
+} 
