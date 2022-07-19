@@ -1,0 +1,16 @@
+.Item{ 
+    background-color:white; 
+    padding:  10px; 
+    border-radius: 3px; 
+    border: 1px solid gray; 
+    margin: 20px; 
+} 
+.Item > button { 
+    font-size: 18px; 
+    border-radius: 3px; 
+    border: solid 1px; 
+    padding: 3px; 
+    margin: 10px; 
+    cursor: pointer; 
+   
+}

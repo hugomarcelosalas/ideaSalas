@@ -1,0 +1,51 @@
+.itemCount {
+    width: 350px;
+    height: 180px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+.itemCount > div > h3 {
+    font-size: 25px;
+    font-family: sans-serif;
+    padding: 10px;
+    text-align: center;
+    color: rgb(60, 59, 59);
+}
+
+.itemCount > div > .controls {
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+    margin: 0 auto;
+    border: 1px solid rgb(21, 21, 21);
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 22px;
+
+
+}
+
+.itemCount > div > .controls > button {
+    width: 15px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    border: 0;
+    margin: auto 10px;
+    background-color: white;
+    cursor: pointer;
+
+}
+.itemCount > .button {
+    margin: auto;
+    padding: 5px;
+    width: 280px;
+    
+}
+.itemCount > .button > button {
+    width: 100%;
+    font-size: 18px;
+    padding: 3px;
+    cursor: pointer;
+}

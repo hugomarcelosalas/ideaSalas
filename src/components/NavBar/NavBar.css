@@ -1,0 +1,22 @@
+.NavBar{ 
+    height: 60px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background: #5265c4; 
+} 
+.NavBar > .nav-logo{ 
+    font-weight: 700; 
+    font-size: 30px; 
+    margin-left: 40px; 
+    color: white; 
+} 
+.NavBar > .categories > a{
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    margin: 15px;
+    position: relative;
+    opacity: 0.9;
+    
+}
