@@ -1,12 +1,10 @@
 import './ItemCount.css'
 import {useState} from 'react';
 
-const ItemCount = (props) => {
+const ItemCount = ({count, setCount}) => {
     const initial = 1;
     let stock = 5;
-   
-
-    const [count, setCount] = useState(initial);
+    
     const [carrito, setCarrito] = useState(0);
     
 

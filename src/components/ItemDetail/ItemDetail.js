@@ -1,8 +1,14 @@
+import ItemCount from '../ItemCount/ItemCount'
+import { useState } from 'react';
 import './ItemDetail.css' 
 
 
 
 const ItemDetail = ({id, name, price, category, img, stock, description}) => { 
+    const initial = 1;
+  
+   
+    const [count, setCount] = useState(initial);
 
     return ( 
          
@@ -14,8 +20,10 @@ const ItemDetail = ({id, name, price, category, img, stock, description}) => {
                 <h3>Precio: ${price}</h3> 
                 <p>Stock: {stock}</p> 
                 
-            </div>          
-        </div>     
+            </div>     
+            <ItemCount count={count} setCount={setCount}/>     
+        </div>   
+
     ) 
 } 
 export default ItemDetail
