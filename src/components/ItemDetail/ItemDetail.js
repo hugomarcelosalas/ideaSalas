@@ -1,7 +1,8 @@
 import './ItemDetail.css' 
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import ItemCount from '../ItemCount/ItemCount';
+import { Context } from '../../App';
 
 
 
@@ -10,12 +11,13 @@ const ItemDetail = ({id, name, price, category, img, stock, description}) => {
     
     const [quantity, setQuantity] = useState(0)
     
+    const { addItem} = useContext(Context)
 
     const onAdd = (count)=> {
         
         console.log(`tienes ${count} items en el carrito`)
         setQuantity(count)
-      
+       addItem({id, name, price, quantity})
     }
 
     return (
@@ -27,8 +29,7 @@ const ItemDetail = ({id, name, price, category, img, stock, description}) => {
                 <p>{description}</p>
                 <h3>Precio: ${price}</h3>
                 <p>Stock: {stock}</p>
-                <ItemCount/>
-                
+                { quantity > 0 ? <Link to='/cart'>Comprar</Link> : <ItemCount stock={stock} onConfirm={onAdd}/> }
                 
             </div>         
 

@@ -1,0 +1,12 @@
+.carrito {
+    margin: auto 50px;  
+    display: flex;
+    flex-direction: column;
+}
+.carrito >.cartList{
+    font-weight: bold;
+    margin: 10px;
+}
+.carrito >.cartList > div {
+    margin: 10px;
+}
