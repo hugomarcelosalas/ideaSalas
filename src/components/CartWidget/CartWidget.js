@@ -10,9 +10,9 @@ const CartWidget = () => {
     const count = getQuantity()
 
     return(
-        <Link to='/cart' className="CartWidget">
-            <img src="/images/cart.png" alt='cart-widget' className='CartImg'/>
-            { count }
+        <Link to='/cart' className="CartWidget" >
+            <img src="/images/cart.png" alt='cart-widget' className='CartImg' style={{width: "35px"}}/>
+            <span>{ count }</span>
         </Link>
     );
 }

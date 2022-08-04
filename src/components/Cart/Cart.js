@@ -25,11 +25,11 @@ const Cart = () => {
             <div className="cartList">
                 {cart.map(prod => 
                     <div>
-                        <td>{prod.name}</td>
-                        <td>{prod.count}</td>
-                        <td>${prod.price}</td>
-                        <td>${prod.price * prod.count}</td>
-                        <button onClick={() => removeItem(prod.id)}>eliminar del carrito</button>
+                        <td style={{fontSize: "24px", textTransform: "uppercase"}}>{prod.name}</td>
+                        <td>Cantidad: {prod.count} unidades</td>
+                        <td>Precio: ${prod.price}</td>
+                        <td>Total: ${prod.price * prod.count}</td>
+                        <button onClick={() => removeItem(prod.id)}>Eliminar</button>
                     </div>) }
                 <button onClick={() => clearCart()}>Vaciar carrito</button>
 

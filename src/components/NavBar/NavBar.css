@@ -5,7 +5,7 @@
     align-items: center; 
     background: #5265c4; 
 } 
-.NavBar > .nav-logo{ 
+.NavBar > a >.nav-logo{ 
     font-weight: 700; 
     font-size: 30px; 
     margin-left: 40px; 
